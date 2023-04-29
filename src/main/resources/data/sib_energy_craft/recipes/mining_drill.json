@@ -1,0 +1,19 @@
+{
+  "type": "sib_energy_craft:crafting_shaped_charged",
+  "pattern": [
+    " # ",
+    "###",
+    "#E#"
+  ],
+  "key": {
+    "#": {
+      "item": "sib_energy_craft:iron_plate"
+    },
+    "E": {
+      "item": "sib_energy_craft:energy_tool_body"
+    }
+  },
+  "result": {
+    "item": "sib_energy_craft:mining_drill"
+  }
+}

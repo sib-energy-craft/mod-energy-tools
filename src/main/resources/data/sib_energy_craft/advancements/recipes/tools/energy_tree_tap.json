@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sib_energy_craft:energy_tree_tap"
+    ]
+  },
+  "criteria": {
+    "has_tree_tap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:tree_tap"
+            ]
+          }
+        ]
+      }
+    },
+    "has_energy_tool_body": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:energy_tool_body"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sib_energy_craft:energy_tree_tap"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tree_tap",
+      "has_energy_tool_body",
+      "has_the_recipe"
+    ]
+  ]
+}

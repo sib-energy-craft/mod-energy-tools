@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sib_energy_craft:diamond_drill"
+    ]
+  },
+  "criteria": {
+    "has_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      }
+    },
+    "has_mining_drill": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:mining_drill"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sib_energy_craft:diamond_drill"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_diamond",
+      "has_mining_drill",
+      "has_the_recipe"
+    ]
+  ]
+}

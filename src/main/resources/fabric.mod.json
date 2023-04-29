@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mod-energy-tools",
+  "version": "0.0.1",
+  "authors": [
+    "sibmaks"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.sib_energy_craft.energy_tools.load.Loader"
+    ]
+  }
+}
