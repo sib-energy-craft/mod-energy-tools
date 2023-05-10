@@ -26,6 +26,7 @@ import java.util.List;
 public class MiningDrillItem extends PickaxeItem implements ChargeableItem {
     @Getter
     private final int maxCharge;
+    @Getter
     private final int energyPerMine;
 
     public MiningDrillItem(@NotNull ToolMaterial material,
