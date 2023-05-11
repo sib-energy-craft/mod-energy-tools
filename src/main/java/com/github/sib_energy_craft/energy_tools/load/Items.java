@@ -5,10 +5,8 @@ import com.github.sib_energy_craft.energy_tools.item.EnergyHoeItem;
 import com.github.sib_energy_craft.energy_tools.item.EnergySawItem;
 import com.github.sib_energy_craft.energy_tools.item.EnergyTreeTapItem;
 import com.github.sib_energy_craft.energy_tools.item.MiningDrillItem;
-import com.github.sib_energy_craft.sec_utils.load.ModRegistrar;
-import com.github.sib_energy_craft.sec_utils.utils.ItemUtils;
+import com.github.sib_energy_craft.sec_utils.load.DefaultModInitializer;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ToolMaterials;
 
@@ -18,7 +16,7 @@ import static com.github.sib_energy_craft.sec_utils.utils.ItemUtils.register;
  * @since 0.0.1
  * @author sibmaks
  */
-public final class Items implements ModRegistrar {
+public final class Items implements DefaultModInitializer {
 
     public static final Item MINING_DRILL;
     public static final Item DIAMOND_DRILL;
