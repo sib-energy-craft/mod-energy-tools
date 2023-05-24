@@ -9,8 +9,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
@@ -84,4 +86,16 @@ public class EnergySawItem extends AxeItem implements ChargeableItem {
         int charge = getCharge(itemStack);
         return charge >= required;
     }
+
+    @Override
+    public ActionResult useOnBlock(ItemUsageContext context) {
+        var actionResult = super.useOnBlock(context);
+        var world = context.getWorld();
+        if(!world.isClient && actionResult.isAccepted()) {
+            var stack = context.getStack();
+            ChargeableItem.super.discharge(stack, energyPerMine);
+        }
+        return actionResult;
+    }
+
 }

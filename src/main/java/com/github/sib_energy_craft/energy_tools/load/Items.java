@@ -29,6 +29,7 @@ public final class Items implements DefaultModInitializer {
 
     static {
         var energyToolSettings = new Item.Settings()
+                .maxDamage(-1)
                 .maxCount(1);
         var miningDrillItem = new MiningDrillItem(ToolMaterials.IRON, 2, -2.8f,
                 energyToolSettings, 50, 30000);
