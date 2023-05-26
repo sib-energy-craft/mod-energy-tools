@@ -107,6 +107,11 @@ public class EnergyHoeItem extends HoeItem implements ChargeableItem {
         ChargeableItem.super.appendTooltip(stack, tooltip);
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
     protected boolean hasAtLeast(@NotNull ItemStack itemStack, int required) {
         int charge = getCharge(itemStack);
         return charge >= required;

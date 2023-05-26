@@ -98,4 +98,9 @@ public class EnergySawItem extends AxeItem implements ChargeableItem {
         return actionResult;
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return true;
+    }
+
 }
