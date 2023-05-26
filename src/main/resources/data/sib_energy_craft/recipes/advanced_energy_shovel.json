@@ -1,0 +1,28 @@
+{
+  "type": "sib_energy_craft:crafting_shaped_charged",
+  "pattern": [
+    " D ",
+    " G ",
+    "BS#"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "sib_energy_craft:energy_shovel"
+    },
+    "#": {
+      "item": "sib_energy_craft:advanced_energy_circuit"
+    },
+    "B": {
+      "item": "sib_energy_craft:advanced_rechargeable_battery"
+    }
+  },
+  "result": {
+    "item": "sib_energy_craft:advanced_energy_shovel"
+  }
+}

@@ -23,7 +23,9 @@ public final class Items implements DefaultModInitializer {
     public static final Item ADVANCED_ENERGY_SAW;
 
     public static final Item ENERGY_HOE;
+
     public static final Item ENERGY_SHOVEL;
+    public static final Item ADVANCED_ENERGY_SHOVEL;
 
     public static final Item ENERGY_TREE_TAP;
 
@@ -62,6 +64,10 @@ public final class Items implements DefaultModInitializer {
         var energyShovel = new EnergyShovelItem(ToolMaterials.IRON, 1.5f, -3f,
                 energyToolSettings, 50, 30000);
         ENERGY_SHOVEL = register(ItemGroups.TOOLS, Identifiers.of("energy_shovel"), energyShovel);
+
+        var advancedEnergyShovel = new EnergyShovelItem(ToolMaterials.DIAMOND, 1.5f, -3f,
+                energyToolSettings, 100, 130000);
+        ADVANCED_ENERGY_SHOVEL = register(ItemGroups.TOOLS, Identifiers.of("advanced_energy_shovel"), advancedEnergyShovel);
 
     }
 }
