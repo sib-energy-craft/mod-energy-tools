@@ -89,11 +89,14 @@ public class EnergySawItem extends AxeItem implements ChargeableItem {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
+        var toolStack = context.getStack();
+        if(!hasAtLeast(toolStack, energyPerMine)) {
+            return ActionResult.PASS;
+        }
         var actionResult = super.useOnBlock(context);
         var world = context.getWorld();
         if(!world.isClient && actionResult.isAccepted()) {
-            var stack = context.getStack();
-            ChargeableItem.super.discharge(stack, energyPerMine);
+            ChargeableItem.super.discharge(toolStack, energyPerMine);
         }
         return actionResult;
     }

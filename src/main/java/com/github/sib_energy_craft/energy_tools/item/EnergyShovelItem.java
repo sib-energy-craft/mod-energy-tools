@@ -86,6 +86,10 @@ public class EnergyShovelItem extends ShovelItem implements ChargeableItem {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
+        var toolStack = context.getStack();
+        if(!hasAtLeast(toolStack, energyPerMine)) {
+            return ActionResult.PASS;
+        }
         var actionResult = super.useOnBlock(context);
         var world = context.getWorld();
         if(!world.isClient && actionResult.isAccepted()) {
