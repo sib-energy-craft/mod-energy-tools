@@ -1,10 +1,7 @@
 package com.github.sib_energy_craft.energy_tools.load;
 
 import com.github.sib_energy_craft.energy_api.utils.Identifiers;
-import com.github.sib_energy_craft.energy_tools.item.EnergyHoeItem;
-import com.github.sib_energy_craft.energy_tools.item.EnergySawItem;
-import com.github.sib_energy_craft.energy_tools.item.EnergyTreeTapItem;
-import com.github.sib_energy_craft.energy_tools.item.MiningDrillItem;
+import com.github.sib_energy_craft.energy_tools.item.*;
 import com.github.sib_energy_craft.sec_utils.load.DefaultModInitializer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -23,7 +20,12 @@ public final class Items implements DefaultModInitializer {
     public static final Item NETHERITE_DRILL;
 
     public static final Item ENERGY_SAW;
+    public static final Item ADVANCED_ENERGY_SAW;
+
     public static final Item ENERGY_HOE;
+
+    public static final Item ENERGY_SHOVEL;
+    public static final Item ADVANCED_ENERGY_SHOVEL;
 
     public static final Item ENERGY_TREE_TAP;
 
@@ -51,9 +53,21 @@ public final class Items implements DefaultModInitializer {
                 energyToolSettings, 50, 30000);
         ENERGY_SAW = register(ItemGroups.TOOLS, Identifiers.of("energy_saw"), energySaw);
 
+        var advancedEnergySaw = new EnergySawItem(ToolMaterials.DIAMOND, 10, -3.0f,
+                energyToolSettings, 100, 130000);
+        ADVANCED_ENERGY_SAW = register(ItemGroups.TOOLS, Identifiers.of("advanced_energy_saw"), advancedEnergySaw);
+
         var energyHoe = new EnergyHoeItem(ToolMaterials.IRON, -2, -1f,
                 energyToolSettings, 50, 30000);
         ENERGY_HOE = register(ItemGroups.TOOLS, Identifiers.of("energy_hoe"), energyHoe);
+
+        var energyShovel = new EnergyShovelItem(ToolMaterials.IRON, 1.5f, -3f,
+                energyToolSettings, 50, 30000);
+        ENERGY_SHOVEL = register(ItemGroups.TOOLS, Identifiers.of("energy_shovel"), energyShovel);
+
+        var advancedEnergyShovel = new EnergyShovelItem(ToolMaterials.DIAMOND, 1.5f, -3f,
+                energyToolSettings, 100, 130000);
+        ADVANCED_ENERGY_SHOVEL = register(ItemGroups.TOOLS, Identifiers.of("advanced_energy_shovel"), advancedEnergyShovel);
 
     }
 }

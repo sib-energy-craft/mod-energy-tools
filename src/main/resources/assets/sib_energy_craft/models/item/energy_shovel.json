@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sib_energy_craft:item/energy_shovel",
+    "layer1": "sib_energy_craft:item/energy_charge_0"
+  },
+  "overrides": [
+    { "predicate": { "sib_energy_craft:charged": 0 }, "model": "sib_energy_craft:item/energy_shovel" },
+    { "predicate": { "sib_energy_craft:charged": 0.2 }, "model": "sib_energy_craft:item/energy_shovel_20" },
+    { "predicate": { "sib_energy_craft:charged": 0.4 }, "model": "sib_energy_craft:item/energy_shovel_40" },
+    { "predicate": { "sib_energy_craft:charged": 0.6 }, "model": "sib_energy_craft:item/energy_shovel_60" },
+    { "predicate": { "sib_energy_craft:charged": 0.8 }, "model": "sib_energy_craft:item/energy_shovel_80" }
+  ]
+}

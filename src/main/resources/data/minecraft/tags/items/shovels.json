@@ -3,6 +3,8 @@
   "values": [
     "sib_energy_craft:mining_drill",
     "sib_energy_craft:diamond_drill",
-    "sib_energy_craft:netherite_drill"
+    "sib_energy_craft:netherite_drill",
+    "sib_energy_craft:energy_shovel",
+    "sib_energy_craft:advanced_energy_shovel"
   ]
 }

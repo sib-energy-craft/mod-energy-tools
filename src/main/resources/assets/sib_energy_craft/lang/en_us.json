@@ -4,5 +4,8 @@
   "item.sib_energy_craft.netherite_drill": "Netherite Drill",
   "item.sib_energy_craft.energy_tree_tap": "Energy Tree Tap",
   "item.sib_energy_craft.energy_saw": "Energy Saw",
-  "item.sib_energy_craft.energy_hoe": "Energy Hoe"
+  "item.sib_energy_craft.advanced_energy_saw": "Advanced Energy Saw",
+  "item.sib_energy_craft.energy_hoe": "Energy Hoe",
+  "item.sib_energy_craft.energy_shovel": "Energy Shovel",
+  "item.sib_energy_craft.advanced_energy_shovel": "Advanced Energy Shovel"
 }

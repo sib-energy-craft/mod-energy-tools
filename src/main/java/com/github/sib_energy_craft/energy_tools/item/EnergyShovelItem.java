@@ -7,10 +7,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.AxeItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -21,21 +18,21 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 /**
- * @since 0.0.1
+ * @since 0.0.6
  * @author sibmaks
  */
 @Slf4j
-public class EnergySawItem extends AxeItem implements ChargeableItem {
+public class EnergyShovelItem extends ShovelItem implements ChargeableItem {
     @Getter
     private final int maxCharge;
     private final int energyPerMine;
 
-    public EnergySawItem(@NotNull ToolMaterial material,
-                         int attackDamage,
-                         float attackSpeed,
-                         @NotNull Settings settings,
-                         int energyPerMine,
-                         int maxCharge) {
+    public EnergyShovelItem(@NotNull ToolMaterial material,
+                            float attackDamage,
+                            float attackSpeed,
+                            @NotNull Settings settings,
+                            int energyPerMine,
+                            int maxCharge) {
         super(material, attackDamage, attackSpeed, settings);
         this.maxCharge = maxCharge;
         this.energyPerMine = energyPerMine;
@@ -96,7 +93,8 @@ public class EnergySawItem extends AxeItem implements ChargeableItem {
         var actionResult = super.useOnBlock(context);
         var world = context.getWorld();
         if(!world.isClient && actionResult.isAccepted()) {
-            ChargeableItem.super.discharge(toolStack, energyPerMine);
+            var stack = context.getStack();
+            ChargeableItem.super.discharge(stack, energyPerMine);
         }
         return actionResult;
     }
