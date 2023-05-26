@@ -23,6 +23,8 @@ public final class Items implements DefaultModInitializer {
     public static final Item NETHERITE_DRILL;
 
     public static final Item ENERGY_SAW;
+    public static final Item ADVANCED_ENERGY_SAW;
+
     public static final Item ENERGY_HOE;
 
     public static final Item ENERGY_TREE_TAP;
@@ -50,6 +52,10 @@ public final class Items implements DefaultModInitializer {
         var energySaw = new EnergySawItem(ToolMaterials.IRON, 6, -3.1f,
                 energyToolSettings, 50, 30000);
         ENERGY_SAW = register(ItemGroups.TOOLS, Identifiers.of("energy_saw"), energySaw);
+
+        var advancedEnergySaw = new EnergySawItem(ToolMaterials.DIAMOND, 10, -3.0f,
+                energyToolSettings, 80, 50000);
+        ADVANCED_ENERGY_SAW = register(ItemGroups.TOOLS, Identifiers.of("advanced_energy_saw"), advancedEnergySaw);
 
         var energyHoe = new EnergyHoeItem(ToolMaterials.IRON, -2, -1f,
                 energyToolSettings, 50, 30000);

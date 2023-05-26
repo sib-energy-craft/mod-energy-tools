@@ -1,0 +1,73 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sib_energy_craft:advanced_energy_saw"
+    ]
+  },
+  "criteria": {
+    "has_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:diamond"
+            ]
+          }
+        ]
+      }
+    },
+    "has_advanced_energy_circuit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:advanced_energy_circuit"
+            ]
+          }
+        ]
+      }
+    },
+    "has_advanced_rechargeable_battery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:advanced_rechargeable_battery"
+            ]
+          }
+        ]
+      }
+    },
+    "has_energy_saw": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:energy_saw"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sib_energy_craft:advanced_energy_saw"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_diamond",
+      "has_advanced_energy_circuit",
+      "has_advanced_rechargeable_battery",
+      "has_energy_saw",
+      "has_the_recipe"
+    ]
+  ]
+}

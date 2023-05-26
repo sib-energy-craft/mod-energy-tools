@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sib_energy_craft:item/advanced_energy_saw",
+    "layer1": "sib_energy_craft:item/energy_charge_80"
+  }
+}
