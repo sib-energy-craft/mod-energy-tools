@@ -10,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -43,7 +44,14 @@ public class MiningDrillItem extends PickaxeItem implements ChargeableItem {
     @Override
     public float getMiningSpeedMultiplier(@NotNull ItemStack stack,
                                           @NotNull BlockState state) {
-        return hasAtLeast(stack, energyPerMine) ? super.getMiningSpeedMultiplier(stack, state) : 0.1f;
+        if(!hasAtLeast(stack, energyPerMine)) {
+            return 0.1f;
+        }
+        boolean isEffectiveBlocks = state.isIn(BlockTags.PICKAXE_MINEABLE);
+        if(!isEffectiveBlocks) {
+            isEffectiveBlocks = state.isIn(BlockTags.SHOVEL_MINEABLE);
+        }
+        return isEffectiveBlocks ? this.miningSpeed : 1.0F;
     }
 
     @Override
