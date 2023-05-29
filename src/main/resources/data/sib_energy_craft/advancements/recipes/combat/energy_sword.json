@@ -1,0 +1,73 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sib_energy_craft:energy_sword"
+    ]
+  },
+  "criteria": {
+    "has_iron_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:iron_plate"
+            ]
+          }
+        ]
+      }
+    },
+    "has_lapis_lazuli": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:lapis_lazuli"
+            ]
+          }
+        ]
+      }
+    },
+    "has_rechargeable_battery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:rechargeable_battery"
+            ]
+          }
+        ]
+      }
+    },
+    "has_vulcanized_rubber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:vulcanized_rubber"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sib_energy_craft:energy_sword"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_plate",
+      "has_lapis_lazuli",
+      "has_rechargeable_battery",
+      "has_vulcanized_rubber",
+      "has_the_recipe"
+    ]
+  ]
+}

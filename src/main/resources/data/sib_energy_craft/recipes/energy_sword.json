@@ -1,0 +1,25 @@
+{
+  "type": "sib_energy_craft:crafting_shaped_charged",
+  "pattern": [
+    " #L",
+    " #L",
+    "VBV"
+  ],
+  "key": {
+    "#": {
+      "item": "sib_energy_craft:iron_plate"
+    },
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "B": {
+      "item": "sib_energy_craft:rechargeable_battery"
+    },
+    "V": {
+      "item": "sib_energy_craft:vulcanized_rubber"
+    }
+  },
+  "result": {
+    "item": "sib_energy_craft:energy_sword"
+  }
+}

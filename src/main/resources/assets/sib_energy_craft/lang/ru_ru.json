@@ -1,12 +1,17 @@
 {
-
   "item.sib_energy_craft.mining_drill": "Дрель",
   "item.sib_energy_craft.diamond_drill": "Алмазная дрель",
   "item.sib_energy_craft.netherite_drill": "Незеритовая дрель",
+
   "item.sib_energy_craft.energy_tree_tap": "Энергетический краник для дерева",
+
   "item.sib_energy_craft.energy_saw": "Энергетическая пила",
   "item.sib_energy_craft.advanced_energy_saw": "Улучшеная энергетическая пила",
+
   "item.sib_energy_craft.energy_hoe": "Энергетическая мотыга",
+
   "item.sib_energy_craft.energy_shovel": "Энергетическая лопата",
-  "item.sib_energy_craft.advanced_energy_shovel": "Улучшенная энергетическая лопата"
+  "item.sib_energy_craft.advanced_energy_shovel": "Улучшенная энергетическая лопата",
+
+  "item.sib_energy_craft.energy_sword": "Энергетический мечь"
 }

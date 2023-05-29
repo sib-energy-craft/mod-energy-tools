@@ -15,10 +15,6 @@ import static com.github.sib_energy_craft.sec_utils.utils.ItemUtils.register;
  */
 public final class Items implements DefaultModInitializer {
 
-    public static final Item MINING_DRILL;
-    public static final Item DIAMOND_DRILL;
-    public static final Item NETHERITE_DRILL;
-
     public static final Item ENERGY_SAW;
     public static final Item ADVANCED_ENERGY_SAW;
 
@@ -29,21 +25,12 @@ public final class Items implements DefaultModInitializer {
 
     public static final Item ENERGY_TREE_TAP;
 
+    public static final Item ENERGY_SWORD;
+
     static {
         var energyToolSettings = new Item.Settings()
                 .maxDamage(-1)
                 .maxCount(1);
-        var miningDrillItem = new MiningDrillItem(ToolMaterials.IRON, 2, -2.8f,
-                energyToolSettings, 50, 30000);
-        MINING_DRILL = register(ItemGroups.TOOLS, Identifiers.of("mining_drill"), miningDrillItem);
-
-        var diamondDrill = new MiningDrillItem(ToolMaterials.DIAMOND, 3, -2.8f,
-                energyToolSettings, 60, 30000);
-        DIAMOND_DRILL = register(ItemGroups.TOOLS, Identifiers.of("diamond_drill"), diamondDrill);
-
-        var netherDrill = new MiningDrillItem(ToolMaterials.NETHERITE, 4, -2.8f,
-                energyToolSettings, 64, 30000);
-        NETHERITE_DRILL = register(ItemGroups.TOOLS, Identifiers.of("netherite_drill"), netherDrill);
 
         var energyTreeTap = new EnergyTreeTapItem(ToolMaterials.WOOD, 1, -2.8f,
                 energyToolSettings, 50, 30000);
@@ -68,6 +55,10 @@ public final class Items implements DefaultModInitializer {
         var advancedEnergyShovel = new EnergyShovelItem(ToolMaterials.DIAMOND, 1.5f, -3f,
                 energyToolSettings, 100, 130000);
         ADVANCED_ENERGY_SHOVEL = register(ItemGroups.TOOLS, Identifiers.of("advanced_energy_shovel"), advancedEnergyShovel);
+
+        var energySword = new EnergySwordItem(ToolMaterials.IRON, 4, -2.4f,
+                energyToolSettings, 15, 10000);
+        ENERGY_SWORD = register(ItemGroups.COMBAT, Identifiers.of("energy_sword"), energySword);
 
     }
 }
