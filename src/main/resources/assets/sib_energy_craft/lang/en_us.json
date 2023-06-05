@@ -7,5 +7,8 @@
   "item.sib_energy_craft.advanced_energy_saw": "Advanced Energy Saw",
   "item.sib_energy_craft.energy_hoe": "Energy Hoe",
   "item.sib_energy_craft.energy_shovel": "Energy Shovel",
-  "item.sib_energy_craft.advanced_energy_shovel": "Advanced Energy Shovel"
+  "item.sib_energy_craft.advanced_energy_shovel": "Advanced Energy Shovel",
+
+  "item.sib_energy_craft.worker_chestplate": "Worker Chestplate",
+  "item.sib_energy_craft.uncharged_worker_chestplate": "Worker Chestplate"
 }

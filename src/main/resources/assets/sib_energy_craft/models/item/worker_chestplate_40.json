@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sib_energy_craft:item/worker_chestplate",
+    "layer1": "sib_energy_craft:item/chestplate_charge_40"
+  }
+}

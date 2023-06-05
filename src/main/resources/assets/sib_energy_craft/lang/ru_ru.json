@@ -8,5 +8,8 @@
   "item.sib_energy_craft.advanced_energy_saw": "Улучшеная энергетическая пила",
   "item.sib_energy_craft.energy_hoe": "Энергетическая мотыга",
   "item.sib_energy_craft.energy_shovel": "Энергетическая лопата",
-  "item.sib_energy_craft.advanced_energy_shovel": "Улучшенная энергетическая лопата"
+  "item.sib_energy_craft.advanced_energy_shovel": "Улучшенная энергетическая лопата",
+
+  "item.sib_energy_craft.worker_chestplate": "Рабочий нагрудник",
+  "item.sib_energy_craft.uncharged_worker_chestplate": "Рабочий нагрудник"
 }
