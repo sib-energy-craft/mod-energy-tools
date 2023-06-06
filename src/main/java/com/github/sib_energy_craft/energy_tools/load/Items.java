@@ -28,6 +28,7 @@ public final class Items implements DefaultModInitializer {
     public static final Item ADVANCED_ENERGY_SHOVEL;
 
     public static final Item ENERGY_TREE_TAP;
+    public static final Item ENERGY_WRENCH;
 
     static {
         var energyToolSettings = new Item.Settings()
@@ -48,6 +49,9 @@ public final class Items implements DefaultModInitializer {
         var energyTreeTap = new EnergyTreeTapItem(ToolMaterials.WOOD, 1, -2.8f,
                 energyToolSettings, 50, 30000);
         ENERGY_TREE_TAP = register(ItemGroups.TOOLS, Identifiers.of("energy_tree_tap"), energyTreeTap);
+
+        var energyWrench = new EnergyWrenchItem(energyToolSettings, 50, 30000);
+        ENERGY_WRENCH = register(ItemGroups.TOOLS, Identifiers.of("energy_wrench"), energyWrench);
 
         var energySaw = new EnergySawItem(ToolMaterials.IRON, 6, -3.1f,
                 energyToolSettings, 50, 30000);

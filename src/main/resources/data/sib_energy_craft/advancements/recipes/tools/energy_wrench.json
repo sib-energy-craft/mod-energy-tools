@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "sib_energy_craft:energy_wrench"
+    ]
+  },
+  "criteria": {
+    "has_wrench": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:wrench"
+            ]
+          }
+        ]
+      }
+    },
+    "has_energy_tool_body": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sib_energy_craft:energy_tool_body"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "sib_energy_craft:energy_wrench"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_wrench",
+      "has_energy_tool_body",
+      "has_the_recipe"
+    ]
+  ]
+}
