@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "mod-energy-tools",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "authors": [
     "sibmaks"
   ],
@@ -11,7 +11,7 @@
   "depends": {
     "fabricloader": ">=0.14.21",
     "fabric": "*",
-    "minecraft": "1.20-rc.1"
+    "minecraft": "1.20"
   },
   "entrypoints": {
     "main": [
